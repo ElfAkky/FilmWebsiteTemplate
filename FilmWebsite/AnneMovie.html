@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="AnneMovie.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="Shortcut Icon" href="images/logoIcon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <div class="nav" id="nav">
+        <img src="images/logo.jpg" class="nav_logo">
+    </div>
+    <div class="nav2" id="nav2">
+        <a href="Anasayfa.html">
+            <img src="images/Cikis.png" class="nav_logo2">
+        </a>
+    </div>
+
+    <div id="mainDiv1">
+        <div>
+            <img src="images/large-movie1.jpg" alt="" class="row_poster" />
+            <div id="text1">
+                Anne with an E is described as a coming-of-age story about an outsider who fights for acceptance, for her place in the world and for love. The drama revolves around a young orphaned girl who, after an abusive childhood spent in orphanages and the homes of strangers, is mistakenly sent to live with an elderly spinster and her aging brother.
+                <br />
+                <br />
+                <b>Cast: </b>
+                <ul>
+                    <li>Amybeth McNulty as Anne Shirley-Cuthbert</li>
+                    <li>Amybeth McNulty as Anne Shirley-Cuthbert</li>
+                    <li>Geraldine James as Marilla Cuthbert</li>
+                    <li>R.H. Thomson as Matthew Cuthbert</li>
+                    <li>Dalila Bela as Diana Barry</li>
+                    <li>Lucas Jade Zumann as Gilbert Blythe</li>
+                    <li>Corrine Koslo as Rachel Lynde</li>
+                    <li>Aymeric Jett Montaz as Jerry Baynard</li>
+                    <li>Dalmar Abuzeid as Sebastian Lacroix</li>
+                </ul>
+                <br />
+                <br />
+                <b>Directors: </b>Paul Fox, Amanda Tapping, Anne Wheeler, Norma Bailey, Ken Girotti, Helen Shaver, Niki Caro, David Evans, Sandra Goldbacher, Kim Nguyen
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <div id="episode">
+        <select class="ep" onchange="season(value);">
+            <option value="Season" disabled selected>Season</option>
+            <option value="1.season">1.Season</option>
+            <option value="2.season">2.Season</option>
+            <option value="3.season">3.Season</option>
+        </select>
+
+
+        <div class="divEpisodes" id="divEpisodes1">
+            <p>1.Episode</p>
+            <p>2.Episode</p>
+            <p>3.Episode</p>
+            <p>4.Episode</p>
+            <p>5.Episode</p>
+            <p>6.Episode</p>
+            <p>7.Episode</p>
+        </div>
+        <br />
+        <div class="divEpisodes" id="divEpisodes2">
+            <p>1.Episode</p>
+            <p>2.Episode</p>
+            <p>3.Episode</p>
+            <p>4.Episode</p>
+            <p>5.Episode</p>
+            <p>6.Episode</p>
+            <p>7.Episode</p>
+            <p>8.Episode</p>
+            <p>9.Episode</p>
+            <p>10.Episode</p>
+        </div>
+        <br />
+        <div class="divEpisodes" id="divEpisodes3">
+            <p>1.Episode</p>
+            <p>2.Episode</p>
+            <p>3.Episode</p>
+            <p>4.Episode</p>
+            <p>5.Episode</p>
+            <p>6.Episode</p>
+            <p>7.Episode</p>
+            <p>8.Episode</p>
+            <p>9.Episode</p>
+            <p>10.Episode</p>
+            <p>11.Episode</p>
+
+        </div>
+    </div>
+
+    <!-- fragman-->
+    <div id="video">
+        <video id="v1" controls="controls">
+            <source src="images/anne-fragman.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+
+    <div class="comment" id="str">
+        <span id="star1" onclick="star1Click()"> <i class="fa-solid fa-star"></i> </span>
+        <span id="star2" onclick="star2Click()"> <i class="fa-solid fa-star"></i> </span>
+        <span id="star3" onclick="star3Click()"> <i class="fa-solid fa-star"></i> </span>
+        <span id="star4" onclick="star4Click()"> <i class="fa-solid fa-star"></i> </span>
+        <span id="star5" onclick="star5Click()"> <i class="fa-solid fa-star"></i> </span>
+    </div>
+
+    <p class="comment" id="strEngel" style="visibility: hidden;"> Oylamanız alınmıştır. </p>
+
+    <script type="text/javascript">
+
+        function star1Click() {
+            document.getElementById("star1").style.color = "wheat";
+
+            alert("1 puan verdiniz.");
+
+            if (document.getElementById("star1").style.color == "wheat") {
+                document.getElementById("str").style.visibility = "hidden";
+                document.getElementById("strEngel").style.visibility = "visible";
+            }
+
+        }
+        function star2Click() {
+            document.getElementById("star2").style.color = "wheat";
+
+            alert("2 puan verdiniz.");
+
+            if (document.getElementById("star2").style.color == "wheat") {
+                document.getElementById("str").style.visibility = "hidden";
+                document.getElementById("strEngel").style.visibility = "visible";
+            }
+        }
+        function star3Click() {
+            document.getElementById("star3").style.color = "wheat";
+
+            alert("3 puan verdiniz.");
+
+            if (document.getElementById("star3").style.color == "wheat") {
+                document.getElementById("str").style.visibility = "hidden";
+                document.getElementById("strEngel").style.visibility = "visible";
+            }
+        }
+        function star4Click() {
+            document.getElementById("star4").style.color = "wheat";
+
+            alert("4 puan verdiniz.");
+
+            if (document.getElementById("star4").style.color == "wheat") {
+                document.getElementById("str").style.visibility = "hidden";
+                document.getElementById("strEngel").style.visibility = "visible";
+            }
+        }
+        function star5Click() {
+            document.getElementById("star5").style.color = "wheat";
+
+            alert("5 puan verdiniz.");
+
+            if (document.getElementById("star5").style.color == "wheat") {
+                document.getElementById("str").style.visibility = "hidden";
+                document.getElementById("strEngel").style.visibility = "visible";
+            }
+        }
+
+        function season($value) {
+            if ($value == "1.season") {
+                document.getElementById("divEpisodes2").style.visibility = "hidden";
+                document.getElementById("divEpisodes3").style.visibility = "hidden";
+                document.getElementById("divEpisodes1").style.visibility = "visible";
+
+            }
+            else if ($value == "2.season") {
+                document.getElementById("divEpisodes3").style.visibility = "hidden";
+                document.getElementById("divEpisodes1").style.visibility = "hidden";
+                document.getElementById("divEpisodes2").style.visibility = "visible";
+
+            }
+            else {
+                document.getElementById("divEpisodes2").style.visibility = "hidden";
+                document.getElementById("divEpisodes1").style.visibility = "hidden";
+                document.getElementById("divEpisodes3").style.visibility = "visible";
+
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>
